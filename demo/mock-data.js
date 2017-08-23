@@ -42,39 +42,61 @@ window._mocks.hotelList = [
         "id": "55610",
         "name": "THE WESTIN LAKE LAS VEGAS RESORT & SPA & THE WESTIN LAKE LAS VEGAS RESORT & SPA & THE WESTIN LAKE LAS VEGAS RESORT & SPA",
         "rating": 3,
+        "address" : "1322 Fremont Street, , Las Vegas 89101",
         "location": "Metropolitan area",
         "phoneNumber": "702 567 1234",
         "distance": {
             "value": 13.86,
             "unit": "Miles"
         },
-        "image": "http://d3mj096p5q0e20.cloudfront.net/ti/HBD/55610/043509a_hb_a_001.jpg",
+        "heroImageUrl": "http://d3mj096p5q0e20.cloudfront.net/ti/HBD/55610/043509a_hb_a_001.jpg",
         "amenities": [
             {name: "Restaurant"},
             {name: "Wifi"},
             {name: "Parking"}
         ],
+        // "room": {
+        //     "name": "Delux room-Twin bed",
+        //     "occupancy": "Max. 4 guests",
+        //     "inclusions": [
+        //         "Breakfast included",
+        //         "Pets allowed"
+        //     ],
+        //     "availability": "In demand - only 3 rooms left",
+        //     "benefits": [
+        //         "RESERVE NOW, PAY LATER",
+        //         "FREE CANCELLATION"
+        //     ]
+        // },
+
         "room": {
             "name": "Delux room-Twin bed",
             "occupancy": "Max. 4 guests",
-            "inclusions": [
-                "Breakfast included",
-                "Pets allowed"
-            ],
-            "availability": "In demand - only 3 rooms left",
-            "benefits": [
-                "RESERVE NOW, PAY LATER",
-                "FREE CANCELLATION"
-            ]
+            availableRoomCount : 3,
+            roomRate : {
+                rateType:"Negotiated",
+                refundability:"Refundable",
+                isPrepaid: true,
+                inclusions: [
+                    "Free Valet Parking",
+                    "Free Parking"
+                ],
+                "offer" : {
+                    "desc" : "Save 25% (on select nights)",
+                    "discountOffer" : 59
+                }
+            }
+            
         },
         "fare": {
-            "amount": 402.86,
-            "currency": "USD"
-        },
-        "discount": {
-            "amount": 57.0,
-            "currency": "USD",
-            "text": "Today 20% off"
+            "currency" : "USD",
+
+            "totalFare": 402,        
+            "discount": [{
+                "amount": 57.0,
+                "type" : "Supplier",
+                "text": "Today 20% off"
+            }]
         },
         "deal": "Limited Time: 1 night free on 3 nights booking",
         "attractions": [
