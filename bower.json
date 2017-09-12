@@ -7,7 +7,7 @@
     "iron-image": "PolymerElements/iron-image#^1.2.5",
     "t-rating-stars": "nxtComponent/t-rating-stars.git",
     "t-style-utils": "nxtComponent/t-style-utils.git",
-    "t-font-icons": "nxtComponent/t-font-icons.git",
+    "t-font-icons": "https://github.com/nxtComponent/t-font-icons.git",
     "t-clamp": "nxtComponent/t-clamp.git",
     "paper-tooltip": "PolymerElements/paper-tooltip#^1.1.3"
   },
