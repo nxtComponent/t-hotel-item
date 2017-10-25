@@ -413,7 +413,7 @@ Custom property | Description | Default
                     amenityList.forEach(function (itm) {
                         if (itm.category) {
                             var amenity = _this._getPrimaryAmenity(itm.category);
-                            if (amenity)
+                            if (amenity && lst.indexOf(amenity)===-1)
                                 lst.push(amenity);
                         }
                     });
