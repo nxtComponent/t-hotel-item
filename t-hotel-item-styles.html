@@ -177,8 +177,7 @@
             }
             
             .location {
-                @apply(--v-t-hotel-item-info-bottom-spacing);
-                padding-top: 5px;
+                @apply --v-t-hotel-item-info-bottom-spacing;
             }
             
             .location-area {
@@ -204,8 +203,8 @@
             }
             
             .phone,
-            .room,.facilities,.breakfast {
-                @apply(--v-t-hotel-item-info-bottom-spacing);
+            .room,.breakfast {
+                @apply --v-t-hotel-item-info-bottom-spacing;
             }
             
             .breakfast,
@@ -219,7 +218,7 @@
             
             .amenities {
                 color: var(--v-t-hotel-item-font-color);
-                padding-top: 10px;
+                padding-top: 25px;
             }
             
             .amenities-content {
@@ -310,11 +309,6 @@
                 padding-bottom: 35px;
             }
             
-            .room-price span {
-                display: inline-block;
-                vertical-align: middle;
-            }
-            
             .room-price span.price-off {
                 padding: 3px 5px;
                 border-radius: 2px;
@@ -325,7 +319,9 @@
             
             .room-price span.actual-price {
                 position: relative;
-                margin: 0 10px
+                margin: 0 20px;
+                font-size: 16px;
+                color: var(--v-t-hotel-item-font-color-disable);
             }
             
             .room-price span.actual-price::before {
@@ -348,6 +344,12 @@
                 font-weight: var(--v-t-hotel-font-weight-bold, 500);
             }
             
+            .price-component {
+                @apply --layout-horizontal;
+                @apply --layout-end-justified;
+                @apply --layout-center;
+            }
+
             .other-facility {
                 padding-bottom: 10px;
                 @apply --layout-vertical;
