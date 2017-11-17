@@ -40,7 +40,7 @@ window._mocks.filterState = [
 window._mocks.hotelList = [
     {
         "id": "55610",
-        "name": "THE WESTIN LAKE LAS VEGAS RESORT & SPA & THE WESTIN LAKE LAS VEGAS RESORT & SPA & THE WESTIN LAKE LAS VEGAS RESORT & SPA",
+        "name": "The Westin Lake LAS VEGAS Resort & SPA",
         "rating": 3,
         "address" : "1322 Fremont Street, , Las Vegas 89101",
         "location": "Metropolitan area",
@@ -53,21 +53,9 @@ window._mocks.hotelList = [
         "amenities": [
             {name: "Restaurant"},
             {name: "Wifi"},
-            {name: "Parking"}
+            {name: "Parking"},
+            {name: "Breakfast"}
         ],
-        // "room": {
-        //     "name": "Delux room-Twin bed",
-        //     "occupancy": "Max. 4 guests",
-        //     "inclusions": [
-        //         "Breakfast included",
-        //         "Pets allowed"
-        //     ],
-        //     "availability": "In demand - only 3 rooms left",
-        //     "benefits": [
-        //         "RESERVE NOW, PAY LATER",
-        //         "FREE CANCELLATION"
-        //     ]
-        // },
 
         "room": {
             "name": "Delux room-Twin bed",
